@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\etgru\\Documents\\IS413\\Mission11_Assignment\\backend\\Mission11_Assignment\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{75FD6D01-D3D0-77A5-55CC-6238C592131A}|Mission11_Assignment\\Mission11_Assignment.csproj|c:\\users\\etgru\\documents\\is413\\mission11_assignment\\backend\\mission11_assignment\\mission11_assignment\\controllers\\bookstorecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75FD6D01-D3D0-77A5-55CC-6238C592131A}|Mission11_Assignment\\Mission11_Assignment.csproj|solutionrelative:mission11_assignment\\controllers\\bookstorecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{75FD6D01-D3D0-77A5-55CC-6238C592131A}|Mission11_Assignment\\Mission11_Assignment.csproj|c:\\users\\etgru\\documents\\is413\\mission11_assignment\\backend\\mission11_assignment\\mission11_assignment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{75FD6D01-D3D0-77A5-55CC-6238C592131A}|Mission11_Assignment\\Mission11_Assignment.csproj|solutionrelative:mission11_assignment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{75FD6D01-D3D0-77A5-55CC-6238C592131A}|Mission11_Assignment\\Mission11_Assignment.csproj|c:\\users\\etgru\\documents\\is413\\mission11_assignment\\backend\\mission11_assignment\\mission11_assignment\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{75FD6D01-D3D0-77A5-55CC-6238C592131A}|Mission11_Assignment\\Mission11_Assignment.csproj|solutionrelative:mission11_assignment\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75FD6D01-D3D0-77A5-55CC-6238C592131A}|Mission11_Assignment\\Mission11_Assignment.csproj|c:\\users\\etgru\\documents\\is413\\mission11_assignment\\backend\\mission11_assignment\\mission11_assignment\\controllers\\bookstorecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75FD6D01-D3D0-77A5-55CC-6238C592131A}|Mission11_Assignment\\Mission11_Assignment.csproj|solutionrelative:mission11_assignment\\controllers\\bookstorecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{75FD6D01-D3D0-77A5-55CC-6238C592131A}|Mission11_Assignment\\Mission11_Assignment.csproj|c:\\users\\etgru\\documents\\is413\\mission11_assignment\\backend\\mission11_assignment\\mission11_assignment\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -34,11 +34,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Bookmark",
@@ -50,7 +54,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\etgru\\Documents\\IS413\\Mission11_Assignment\\backend\\Mission11_Assignment\\Mission11_Assignment\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Mission11_Assignment\\Properties\\launchSettings.json",
@@ -58,18 +62,17 @@
               "RelativeToolTip": "Mission11_Assignment\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABAAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-20T19:56:00.23Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-20T19:56:00.23Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "BookstoreController.cs",
               "DocumentMoniker": "C:\\Users\\etgru\\Documents\\IS413\\Mission11_Assignment\\backend\\Mission11_Assignment\\Mission11_Assignment\\Controllers\\BookstoreController.cs",
               "RelativeDocumentMoniker": "Mission11_Assignment\\Controllers\\BookstoreController.cs",
               "ToolTip": "C:\\Users\\etgru\\Documents\\IS413\\Mission11_Assignment\\backend\\Mission11_Assignment\\Mission11_Assignment\\Controllers\\BookstoreController.cs",
               "RelativeToolTip": "Mission11_Assignment\\Controllers\\BookstoreController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAmwBIAAABDAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAkwB0AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-20T18:54:32.419Z",
               "EditorCaption": ""
@@ -84,8 +87,7 @@
               "RelativeToolTip": "Mission11_Assignment\\Data\\BookstoreContext.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T18:53:35.89Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-20T18:53:35.89Z"
             },
             {
               "$type": "Document",
@@ -97,12 +99,11 @@
               "RelativeToolTip": "Mission11_Assignment\\Data\\Book.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T18:53:27.215Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-20T18:53:27.215Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\etgru\\Documents\\IS413\\Mission11_Assignment\\backend\\Mission11_Assignment\\Mission11_Assignment\\Program.cs",
               "RelativeDocumentMoniker": "Mission11_Assignment\\Program.cs",
@@ -123,8 +124,7 @@
               "RelativeToolTip": "Mission11_Assignment\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-20T19:17:54.819Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-20T19:17:54.819Z"
             }
           ]
         }

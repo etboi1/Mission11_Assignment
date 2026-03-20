@@ -16,8 +16,10 @@ namespace Mission11_Assignment.Controllers
         }
 
         [HttpGet(Name = "GetBooks")]
-        public IEnumerable<Book> Get(int pageSize=10, int pageNum=1, string sortOrder = "none")
+        public IActionResult Get(int pageSize=5, int pageNum=1, string sortOrder = "none")
         {
+            var totalNumBooks = _bookstoreContext.Books.Count();
+            
             IQueryable<Book> query = sortOrder switch
             {
                 "asc"  => _bookstoreContext.Books.OrderBy(b => b.Title),
@@ -25,10 +27,14 @@ namespace Mission11_Assignment.Controllers
                 _      => _bookstoreContext.Books  // default: no sorting, natural DB order
             };
 
-            return query
-                .Skip((pageNum - 1) * pageSize)
-                .Take(pageSize)
-                .ToList();
+            return Ok(new
+            {
+                Books = query
+                    .Skip((pageNum - 1) * pageSize)
+                    .Take(pageSize)
+                    .ToList(),
+                TotalNumBooks = totalNumBooks
+            });
         }
 
     }

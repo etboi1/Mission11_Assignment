@@ -30,7 +30,7 @@
                 "string"
               ],
               "format": "int32",
-              "default": 10
+              "default": 5
             }
           },
           {
@@ -57,33 +57,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Book"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Book"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Book"
-                  }
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       }
@@ -130,53 +104,6 @@
   },
   "components": {
     "schemas": {
-      "Book": {
-        "type": "object",
-        "properties": {
-          "bookID": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
-            "format": "int32"
-          },
-          "title": {
-            "type": "string"
-          },
-          "author": {
-            "type": "string"
-          },
-          "publisher": {
-            "type": "string"
-          },
-          "isbn": {
-            "type": "string"
-          },
-          "classification": {
-            "type": "string"
-          },
-          "category": {
-            "type": "string"
-          },
-          "pageCount": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
-            "format": "int32"
-          },
-          "price": {
-            "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?(?:[eE][+-]?\\d+)?$",
-            "type": [
-              "number",
-              "string"
-            ],
-            "format": "float"
-          }
-        }
-      },
       "WeatherForecast": {
         "type": "object",
         "properties": {
