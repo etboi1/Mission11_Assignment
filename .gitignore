@@ -19,3 +19,7 @@ dist-ssr
 *.ntvs*
 *.njsproj
 *.sw?
+
+# Backend
+backend/Mission11_Assignment/Mission11_Assignment/bin
+backend/Mission11_Assignment/Mission11_Assignment/obj
