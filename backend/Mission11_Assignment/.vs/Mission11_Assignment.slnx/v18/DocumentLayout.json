@@ -34,15 +34,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Bookmark",
@@ -72,7 +68,7 @@
               "RelativeDocumentMoniker": "Mission11_Assignment\\Controllers\\BookstoreController.cs",
               "ToolTip": "C:\\Users\\etgru\\Documents\\IS413\\Mission11_Assignment\\backend\\Mission11_Assignment\\Mission11_Assignment\\Controllers\\BookstoreController.cs",
               "RelativeToolTip": "Mission11_Assignment\\Controllers\\BookstoreController.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAkwB0AAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAowB0AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-20T18:54:32.419Z",
               "EditorCaption": ""
@@ -111,8 +107,7 @@
               "RelativeToolTip": "Mission11_Assignment\\Program.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAAACIAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T18:48:31.088Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-20T18:48:31.088Z"
             },
             {
               "$type": "Document",
