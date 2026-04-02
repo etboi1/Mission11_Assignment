@@ -56,7 +56,7 @@ const EditBookForm = ({ book, onSuccess, onCancel }: EditBookFormProps) => {
                 <label htmlFor="price" className="form-label">Price</label>
                 <input type="number" name="price" className="form-control" value={formData.price} onChange={handleChange} />
             </div>
-            <button type="submit" className="btn btn-primary">Add Book</button>
+            <button type="submit" className="btn btn-primary">Update Book</button>
             <button type="button" className="btn btn-secondary" onClick={onCancel}>Cancel</button>
         </form>
     );

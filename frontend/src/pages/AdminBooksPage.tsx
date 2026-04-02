@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import type { book } from "../types/book";
 import { deleteBook, fetchBooks } from "../api/BookstoreAPI";
-import AdminBookCard from "../components/AdminBookCard";
 import Pagination from "../components/Pagination";
 import NewBookForm from "../components/NewBookForm";
 import EditBookForm from "../components/EditBookForm";
@@ -83,10 +82,50 @@ function AdminBooksPage() {
         )}
 
         {/* Book grid */}
-        <div className="row g-4">
-            {books.map((b) => (
-                <AdminBookCard key={b.bookID} {...b} />
-            ))}
+        <div className="table-responsive">
+            <table className="table table-striped table-hover align-middle">
+                <thead className="table-dark">
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Publisher</th>
+                        <th>ISBN</th>
+                        <th>Classification</th>
+                        <th>Category</th>
+                        <th>Pages</th>
+                        <th>Price</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {books.map((b) => (
+                        <tr key={b.bookID}>
+                            <td className="fw-semibold">{b.title}</td>
+                            <td>{b.author}</td>
+                            <td>{b.publisher}</td>
+                            <td><span className="text-muted small">{b.isbn}</span></td>
+                            <td>{b.classification}</td>
+                            <td>{b.category}</td>
+                            <td>{b.pageCount}</td>
+                            <td>${b.price.toFixed(2)}</td>
+                            <td>
+                                <button
+                                    className="btn btn-sm btn-outline-primary me-2"
+                                    onClick={() => setEditingBook(b)}
+                                >
+                                    Edit
+                                </button>
+                                <button
+                                    className="btn btn-sm btn-danger"
+                                    onClick={() => handleDeleteBook(b.bookID)}
+                                >
+                                    Delete
+                                </button>
+                            </td>
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
         </div>
         
         {/* Pagination */}
