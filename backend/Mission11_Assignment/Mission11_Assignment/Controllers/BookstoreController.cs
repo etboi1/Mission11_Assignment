@@ -53,5 +53,34 @@ namespace Mission11_Assignment.Controllers
 
             return Ok(bookCategories);
         }
+
+        [HttpPost("AddBook")]
+        public IActionResult AddBook(Book book)
+        {
+            _bookstoreContext.Books.Add(book);
+            _bookstoreContext.SaveChanges();
+            return Ok(book);
+        }
+
+        [HttpPut("UpdateBook")]
+        public IActionResult UpdateBook(Book book)
+        {
+            _bookstoreContext.Books.Update(book);
+            _bookstoreContext.SaveChanges();
+            return Ok(book);
+        }
+
+        [HttpDelete("DeleteBook")]
+        public IActionResult DeleteBook(int id)
+        {
+            var book = _bookstoreContext.Books.Find(id);
+            if (book == null)
+            {
+                return NotFound();
+            }
+            _bookstoreContext.Books.Remove(book);
+            _bookstoreContext.SaveChanges();
+            return Ok(book);
+        }
     }
 }
