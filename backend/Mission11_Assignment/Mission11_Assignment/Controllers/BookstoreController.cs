@@ -16,9 +16,8 @@ namespace Mission11_Assignment.Controllers
         }
 
         [HttpGet(Name = "GetBooks")]
-        public IActionResult Get(int pageSize=5, int pageNum=1, string sortOrder = "none")
+        public IActionResult Get(int pageSize=5, int pageNum=1, string sortOrder = "none", [FromQuery] List<string>? bookCategories = null)
         {
-            var totalNumBooks = _bookstoreContext.Books.Count();
             
             IQueryable<Book> query = sortOrder switch
             {
@@ -26,6 +25,13 @@ namespace Mission11_Assignment.Controllers
                 "desc" => _bookstoreContext.Books.OrderByDescending(b => b.Title),
                 _      => _bookstoreContext.Books  // default: no sorting, natural DB order
             };
+
+            if (bookCategories != null && bookCategories.Any())
+            {
+                query = query.Where(b => bookCategories.Contains(b.Category));
+            }
+
+            var totalNumBooks = query.Count();
 
             return Ok(new
             {
@@ -37,5 +43,15 @@ namespace Mission11_Assignment.Controllers
             });
         }
 
+        [HttpGet("GetBookCategories")]
+        public IActionResult GetBookCategories()
+        {
+            var bookCategories = _bookstoreContext.Books
+                .Select(b => b.Category)
+                .Distinct()
+                .ToList();
+
+            return Ok(bookCategories);
+        }
     }
 }
