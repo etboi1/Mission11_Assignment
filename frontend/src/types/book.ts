@@ -6,6 +6,6 @@ export type book = {
     isbn: string,
     classification: string,
     category: string,
-    pageCount: string,
+    pageCount: number,
     price: number
 };

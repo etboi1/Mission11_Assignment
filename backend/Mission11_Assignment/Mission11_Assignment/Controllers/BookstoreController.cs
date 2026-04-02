@@ -55,19 +55,20 @@ namespace Mission11_Assignment.Controllers
         }
 
         [HttpPost("AddBook")]
-        public IActionResult AddBook(Book book)
+        public IActionResult AddBook([FromBody] Book newBook)
         {
-            _bookstoreContext.Books.Add(book);
+            _bookstoreContext.Books.Add(newBook);
             _bookstoreContext.SaveChanges();
-            return Ok(book);
+            return Ok(newBook);
         }
 
         [HttpPut("UpdateBook")]
-        public IActionResult UpdateBook(Book book)
+        public IActionResult UpdateBook(int id, [FromBody] Book updatedBook)
         {
-            _bookstoreContext.Books.Update(book);
+            updatedBook.BookID = id;
+            _bookstoreContext.Books.Update(updatedBook);
             _bookstoreContext.SaveChanges();
-            return Ok(book);
+            return Ok(updatedBook);
         }
 
         [HttpDelete("DeleteBook")]
