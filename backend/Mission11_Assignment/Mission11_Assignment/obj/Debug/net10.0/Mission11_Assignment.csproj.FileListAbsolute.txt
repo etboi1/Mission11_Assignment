@@ -131,6 +131,7 @@ C:\Users\etgru\Documents\IS413\Mission11_Assignment\backend\Mission11_Assignment
 C:\Users\etgru\Documents\IS413\Mission11_Assignment\backend\Mission11_Assignment\Mission11_Assignment\obj\Debug\net10.0\Mission11_Assignment.csproj.CoreCompileInputs.cache
 C:\Users\etgru\Documents\IS413\Mission11_Assignment\backend\Mission11_Assignment\Mission11_Assignment\obj\Debug\net10.0\Mission11_Assignment.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\etgru\Documents\IS413\Mission11_Assignment\backend\Mission11_Assignment\Mission11_Assignment\obj\Debug\net10.0\Mission11_Assignment.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\etgru\Documents\IS413\Mission11_Assignment\backend\Mission11_Assignment\Mission11_Assignment\obj\Debug\net10.0\Mission11_Assignment.sourcelink.json
 C:\Users\etgru\Documents\IS413\Mission11_Assignment\backend\Mission11_Assignment\Mission11_Assignment\obj\Debug\net10.0\rjimswa.dswa.cache.json
 C:\Users\etgru\Documents\IS413\Mission11_Assignment\backend\Mission11_Assignment\Mission11_Assignment\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
 C:\Users\etgru\Documents\IS413\Mission11_Assignment\backend\Mission11_Assignment\Mission11_Assignment\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
@@ -146,5 +147,3 @@ C:\Users\etgru\Documents\IS413\Mission11_Assignment\backend\Mission11_Assignment
 C:\Users\etgru\Documents\IS413\Mission11_Assignment\backend\Mission11_Assignment\Mission11_Assignment\obj\Debug\net10.0\Mission11_Assignment.pdb
 C:\Users\etgru\Documents\IS413\Mission11_Assignment\backend\Mission11_Assignment\Mission11_Assignment\obj\Debug\net10.0\Mission11_Assignment.genruntimeconfig.cache
 C:\Users\etgru\Documents\IS413\Mission11_Assignment\backend\Mission11_Assignment\Mission11_Assignment\obj\Debug\net10.0\ref\Mission11_Assignment.dll
-C:\Users\etgru\Documents\IS413\Mission11_Assignment\backend\Mission11_Assignment\Mission11_Assignment\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
-C:\Users\etgru\Documents\IS413\Mission11_Assignment\backend\Mission11_Assignment\Mission11_Assignment\obj\Debug\net10.0\Mission11_Assignment.sourcelink.json
