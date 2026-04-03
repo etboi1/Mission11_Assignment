@@ -4,6 +4,7 @@ import { deleteBook, fetchBooks } from "../api/BookstoreAPI";
 import Pagination from "../components/Pagination";
 import NewBookForm from "../components/NewBookForm";
 import EditBookForm from "../components/EditBookForm";
+import Header from "../components/Header";
 
 function AdminBooksPage() {
     const [books, setBooks] = useState<book[]>([]);
@@ -48,27 +49,7 @@ function AdminBooksPage() {
 
     return (
         <>
-
-        {!showForm && (
-            <button
-            className="btn btn-primary mb-3"
-            onClick={() => setShowForm(true)}
-            >
-                Add Book
-            </button>
-        )}
-        
-        {showForm && (
-            <NewBookForm 
-                onSuccess={() => {
-                    setShowForm(false); 
-                    fetchBooks(pageSize, pageNum, "none", []).then((data) => 
-                        setBooks(data.books)
-                    );
-                }}
-                onCancel={() => setShowForm(false)}
-            />
-        )}
+        <Header />
 
         {editingBook && (
             <EditBookForm 
@@ -82,7 +63,7 @@ function AdminBooksPage() {
         )}
 
         {/* Book grid */}
-        <div className="table-responsive">
+        <div className="table-responsive p-5">
             <table className="table table-striped table-hover align-middle">
                 <thead className="table-dark">
                     <tr>
@@ -110,7 +91,7 @@ function AdminBooksPage() {
                             <td>${b.price.toFixed(2)}</td>
                             <td>
                                 <button
-                                    className="btn btn-sm btn-outline-primary me-2"
+                                    className="btn btn-sm btn-outline-primary m-1"
                                     onClick={() => setEditingBook(b)}
                                 >
                                     Edit
@@ -128,17 +109,42 @@ function AdminBooksPage() {
             </table>
         </div>
         
-        {/* Pagination */}
-        <Pagination 
-            currentPage={pageNum} 
-            totalPages={numPages} 
-            pageSize={pageSize} 
-            onPageChange={setPageNum} 
-            onPageSizeChange={(newSize) => {
-                setPageNum(1);
-                setPageSize(newSize);
-            }} 
-        />
+        {/* Container for pagination and add book button */}
+        <div className="d-flex align-items-center justify-content-between mt-4 mb-3 ms-5 me-5">
+            {/* Pagination */}
+            <Pagination 
+                currentPage={pageNum} 
+                totalPages={numPages} 
+                pageSize={pageSize} 
+                onPageChange={setPageNum} 
+                onPageSizeChange={(newSize) => {
+                    setPageNum(1);
+                    setPageSize(newSize);
+                }} 
+            />
+
+            {!showForm && (
+                <button
+                    className="btn btn-primary"
+                    onClick={() => setShowForm(true)}
+                    >
+                        Add Book
+                </button>
+            )}
+            
+            {showForm && (
+                <NewBookForm 
+                    onSuccess={() => {
+                        setShowForm(false); 
+                        fetchBooks(pageSize, pageNum, "none", []).then((data) => 
+                            setBooks(data.books)
+                        );
+                    }}
+                    onCancel={() => setShowForm(false)}
+                />
+            )}
+        </div>
+
         </>
     );
 };

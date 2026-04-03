@@ -45,17 +45,20 @@ function BookList({ selectedCategories, sortOrder, pageNum, setPageNum }: { sele
         ))}
       </div>
 
-      {/* Pagination */}
-      <Pagination 
-        currentPage={pageNum} 
-        totalPages={numPages} 
-        pageSize={pageSize} 
-        onPageChange={setPageNum}
-        onPageSizeChange={(newSize) => {
-          setPageNum(1);
-          setPageSize(newSize);
-        }} 
-      />
+      {/* Pagination */}     
+      <div className="d-flex align-items-center justify-content-between mt-4 mb-3 ms-5 me-5">
+        <Pagination 
+          currentPage={pageNum} 
+          totalPages={numPages} 
+          pageSize={pageSize} 
+          onPageChange={setPageNum}
+          onPageSizeChange={(newSize) => {
+            setPageNum(1);
+            setPageSize(newSize);
+          }} 
+        />
+      </div>
+
     </div>
   );
 }
