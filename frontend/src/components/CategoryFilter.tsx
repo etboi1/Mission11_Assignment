@@ -16,7 +16,7 @@ function CategoryFilter({selectedCategories, setSelectedCategories, setPageNum}:
     useEffect(() => {
         const fetchCategories = async () => {
             try {
-                const response = await fetch(`https://localhost:5000/api/Bookstore/GetBookCategories`);
+                const response = await fetch(`https://assignment13-grundvig-backend-cdehgcdzdya6htbx.westus-01.azurewebsites.net/api/Bookstore/GetBookCategories`);
                 const data = await response.json();
                 console.log('Fetched categories:', data)
                 setCategories(data);
