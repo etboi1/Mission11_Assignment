@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/1436ef8e-8c5f-4ce4-97f8-635fe4b124b8/resourceGroups/appsvc_windows_westus/providers/Microsoft.Web/sites/Assignment13-Grundvig-Backend",
+    "appService.deploySubpath": "backend\\Mission11_Assignment\\Mission11_Assignment\\publish"
+}
